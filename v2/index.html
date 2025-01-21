@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Incredibox - V2 "Little Miss" 2012</title>
-		<meta name="description" content="&quot;Little miss&quot; is the second version of the Flash music game Incredibox. This version of Incredibox, released in 2012, got severals web awards and recognitions (Rob ford Adobe Edge newsletter, BBC, The Lovie Awards, Game One, etc.).">
-		<meta name="keywords" content="music, beatbox, bonus, rythme, music app, learning rythme, make sounds, educational music game, create music, music tool, music sequencer online, flash music app, free flash game">
-		<meta name="author" content="So Far So Good">
-		<meta name="copyright" content="http://www.sofarsogood.fr">
-		
-                <!--  + + + + + + + + + + + + + + + + + + +   POWERED by INCREDIBOX   + + + + + + + + + + + + + + + + + + + + + +
+    <head>
+        <meta charset="UTF-8" />
+        <title>Incredibox - V2 "Little Miss" 2012</title>
+        <meta
+            name="description"
+            content='"Little miss" is the second version of the Flash music game Incredibox. This version of Incredibox, released in 2012, got severals web awards and recognitions (Rob ford Adobe Edge newsletter, BBC, The Lovie Awards, Game One, etc.).'
+        />
+        <meta name="keywords" content="music, beatbox, bonus, rythme, music app, learning rythme, make sounds, educational music game, create music, music tool, music sequencer online, flash music app, free flash game" />
+        <meta name="author" content="So Far So Good" />
+        <meta name="copyright" content="http://www.sofarsogood.fr" />
+
+        <!--  + + + + + + + + + + + + + + + + + + +   POWERED by INCREDIBOX   + + + + + + + + + + + + + + + + + + + + + +
                 + + + + + + + + + + + + + + + + + + + + +  Incredibox � So Far So Good  + + + + + + + + + + + + + + + + + + + + +
                 + + + + + + + + + + + + + + + + + + + + +   http://www.sofarsogood.fr   + + + + + + + + + + + + + + + + + + + + +
 
@@ -79,105 +82,109 @@
                 + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
                 + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + -->
 
+        <meta property="og:title" content='INCREDIBOX V2 - "Little Miss"' />
+        <meta property="og:description" content='Express your musicality on Incredibox with the second version called "Sunrise". Create your mix, record it, share it then join the TOP 50 chart! Pump it up and chill ;)' />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.incredibox.com/img/share/fb-incredibox-v2.jpg" />
 
-		<meta property="og:title" content="INCREDIBOX V2 - &quot;Little Miss&quot;">
-		<meta property="og:description" content="Express your musicality on Incredibox with the second version called &quot;Sunrise&quot;. Create your mix, record it, share it then join the TOP 50 chart! Pump it up and chill ;)">
-		<meta property="og:type" content="website">
-		<meta property="og:image" content="https://www.incredibox.com/img/share/fb-incredibox-v2.jpg">
+        <link href="https://www.incredibox.com/img/favicon.ico" type="image/ico" rel="icon" />
+        <link href="../css/index.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Allan" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet" type="text/css" />
 
-		<link href="https://www.incredibox.com/img/favicon.ico" type="image/ico" rel="icon">
-		<link href="../css/index.css" rel="stylesheet">
-		<link href='https://fonts.googleapis.com/css?family=Allan' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,700' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+        <!--[if lt IE 10]><script type="text/javascript" src="../js/jquery.placeholder.js"></script><![endif]-->
+        <script type="text/javascript" src="../js/TweenMax.min.js"></script>
+        <script type="text/javascript" src="../js/easing/EasePack.min.js"></script>
+        <script type="text/javascript" src="../js/swfobject.js"></script>
+        <script type="text/javascript" src="../js/index.js"></script>
+        <script type="text/javascript" src="../js/blockad.js"></script>
+        <script type="text/javascript">
+            var flashversion = "9.0.0";
+            var domain = location.protocol.indexOf("https") > -1 ? "https://www.incredibox.com/" : "http://www.incredibox.com/";
+            var versionIE = 0;
 
-		<script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
-		<!--[if lt IE 10]><script type="text/javascript" src="../js/jquery.placeholder.js"></script><![endif]-->
-    	<script type="text/javascript" src="../js/TweenMax.min.js"></script>
-		<script type="text/javascript" src="../js/easing/EasePack.min.js"></script>
-		<script type="text/javascript" src="../js/swfobject.js"></script>
-		<script type="text/javascript" src="../js/index.js"></script>
-		<script type="text/javascript" src="../js/blockad.js"></script>
-		<script type="text/javascript">
-			
-			var flashversion = "9.0.0";
-			var domain = (location.protocol.indexOf('https')>-1) ? "https://www.incredibox.com/" : "http://www.incredibox.com/";
-			var versionIE = 0;
+            $(document).ready(function () {
+                if (swfobject.hasFlashPlayerVersion(flashversion)) {
+                    var flashvars = {};
+                    flashvars.compo = "";
+                    flashvars.domain = domain;
+                    flashvars.rootFolder = "../app/";
+                    flashvars.appFolder = "v2/";
+                    var params = {};
+                    params.bgcolor = "#FFFFFF";
+                    params.menu = "false";
+                    params.quality = "best";
+                    params.salign = "T";
+                    params.scale = "noscale";
+                    params.wmode = "opaque";
+                    params.allowfullscreen = "false";
+                    params.allowscriptaccess = "always";
+                    var attributes = {};
+                    swfobject.embedSWF("../app/index.swf", "flashContent", "100%", "100%", flashversion, "", flashvars, params, attributes, embedFlashOk);
+                } else {
+                    $(".info").show();
+                }
+                init();
+            });
+            function embedFlashOk(e) {
+                // trace(e.success);
+            }
+        </script>
+    </head>
+    <body>
+        <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+        <noscript>
+            <div id="info-js"><p>You have to enable JavaScript in your browser settings to access this website</p></div>
+        </noscript>
 
-			$(document).ready(function() {
-				if(swfobject.hasFlashPlayerVersion(flashversion)){
-					var flashvars = {};
-					flashvars.compo = "";
-					flashvars.domain = domain;
-					flashvars.rootFolder = "../app/";
-					flashvars.appFolder = "v2/";
-					var params = {};
-					params.bgcolor = "#FFFFFF";
-					params.menu = "false";
-					params.quality = "best";
-					params.salign = "T";
-					params.scale = "noscale";
-					params.wmode = "opaque";
-					params.allowfullscreen = "false";
-					params.allowscriptaccess = "always";
-					var attributes = {};
-					swfobject.embedSWF("../app/index.swf", "flashContent", "100%", "100%", flashversion, "", flashvars, params, attributes, embedFlashOk)
-				}else{
-					$(".info").show();
-				}
-				init();
-			});
-			function embedFlashOk(e){
-				// trace(e.success);
-			}
-		</script>
-	</head>
-	<body>
-		<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
-		<noscript><div id="info-js"><p>You have to enable JavaScript in your browser settings to access this website</p></div></noscript>
+        <div id="bbox">
+            <div id="bbox-fd"></div>
+            <div id="bbox-body">
+                <div id="bbox-click"></div>
+            </div>
+        </div>
+        <!-- ____________________________________________________ -->
+        <!-- _____________________________________________ HEADER -->
+        <div id="menu">
+            <!-- _____________________________ MENU -->
+            <div id="hd-left">
+                <a href="../index.html" id="bt1" class="lien">
+                    <div class="title">Incredibox</div>
+                    <div class="picto"></div>
+                </a>
+                <div class="clear"></div>
+            </div>
+        </div>
 
-		<div id="bbox">
-			<div id="bbox-fd"></div>
-			<div id="bbox-body">
-				<div id="bbox-click"></div>
-			</div>
-		</div>		<!-- ____________________________________________________ -->
-				<!-- _____________________________________________ HEADER -->			
-		<div id="menu">
-			<!-- _____________________________ MENU -->
-			<div id="hd-left">
-				<a href="../index.html" id="bt1" class="lien"><div class="title">Incredibox</div><div class="picto"></div></a>
-				<div class="clear"></div>
-			</div>
-		</div>
-				
-		<!-- _____________________________________________________ -->
-		<!-- _____________________________________________ CONTENT -->
-		<div id="wrap" class="game v2">
+        <!-- _____________________________________________________ -->
+        <!-- _____________________________________________ CONTENT -->
+        <div id="wrap" class="game v2">
+            <div class="head">
+                <div class="middle smooth">
+                    <div id="head-title">
+                        <h1>Incredibox</h1>
+                        <p>presents</p>
+                        <h2>Little miss</h2>
+                        <span>2012</span>
+                        <div class="version nosmooth">V2</div>
+                    </div>
+                </div>
+                <a href="https://itunes.apple.com/app/id1093131935" target="_blank" class="bt-store" id="bt-appstore" onclick="saveGA('click_bt_appstore', 'Click from header', 'click_bt_store');"></a>
+                <a href="https://play.google.com/store/apps/details?id=com.sofarsogood.incredibox" target="_blank" class="bt-store" id="bt-playstore" onclick="saveGA('click_bt_playstore', 'Click from header', 'click_bt_store');"></a>
+            </div>
 
-			<div class="head">
-				<div class="middle smooth">
-					<div id="head-title">
-						<h1>Incredibox</h1>
-						<p>presents</p>
-						<h2>Little miss</h2>
-						<span>2012</span>
-						<div class="version nosmooth">V2</div>
-					</div>
-				</div>
-				<a href='https://itunes.apple.com/app/id1093131935' target='_blank' class='bt-store' id="bt-appstore" onclick="saveGA('click_bt_appstore', 'Click from header', 'click_bt_store');"></a>
-				<a href='https://play.google.com/store/apps/details?id=com.sofarsogood.incredibox' target='_blank' class='bt-store' id="bt-playstore" onclick="saveGA('click_bt_playstore', 'Click from header', 'click_bt_store');"></a>
-			</div>
+            <!-- _____________________________________________ FLASH APP V3 -->
 
-			<!-- _____________________________________________ FLASH APP V3 -->
-
-
-			<div class="middle" id="box-game">
-				<div id="flashContent">
-					<div class="info">You need to install or upgrade your Flash Player.<br>You can download it <a href="http://get.adobe.com/flashplayer/" target="_blank">here</a>.</div>
-				</div>
-			</div>
-
-		</div><!-- div wrap -->
-		
-	</body>
+            <div class="middle" id="box-game">
+                <div id="flashContent">
+                    <div class="info">
+                        You need to install or upgrade your Flash Player.<br/>
+                        You can download it <a href="http://get.adobe.com/flashplayer/" target="_blank">here</a>.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- div wrap -->
+    </body>
 </html>

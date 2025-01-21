@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <title>Incredibox - "The original" 2009</title>
-      <meta name="description" content="&quot;The original&quot; is the first version of the Flash game Incredibox released in 2009. This version got a FWA (Favourite Website Awards recognising the very best in cutting edge website design).">
-      <meta name="author" content="So Far So Good">
-      <meta name="copyright" content="http://www.sofarsogood.fr">
-      <!--  + + + + + + + + + + + + + + + + + + +   POWERED by INCREDIBOX   + + + + + + + + + + + + + + + + + + + + + +
+    <head>
+        <meta charset="UTF-8" />
+        <title>Incredibox - "The original" 2009</title>
+        <meta name="description" content='"The original" is the first version of the Flash game Incredibox released in 2009. This version got a FWA (Favourite Website Awards recognising the very best in cutting edge website design).' />
+        <meta name="author" content="So Far So Good" />
+        <meta name="copyright" content="http://www.sofarsogood.fr" />
+        <!--  + + + + + + + + + + + + + + + + + + +   POWERED by INCREDIBOX   + + + + + + + + + + + + + + + + + + + + + +
          + + + + + + + + + + + + + + + + + + + + +  Incredibox © So Far So Good  + + + + + + + + + + + + + + + + + + + + +
          + + + + + + + + + + + + + + + + + + + + +   http://www.sofarsogood.fr   + + + + + + + + + + + + + + + + + + + + +
          
@@ -76,92 +76,95 @@
          + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
          + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
          + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + -->
-      <meta property="og:title" content="INCREDIBOX V1 - &quot;The original&quot;">
-      <meta property="og:description" content="The first version of Incredibox created in 2009. Pump it up and chill!">
-      <meta property="og:type" content="website">
-      <meta property="og:image" content="https://www.incredibox.com/img/share/fb-incredibox-v0.jpg">
-      <link href="favicon.ico" type="image/ico" rel="icon">
-      <link href="../css/index.css" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Allan" rel="stylesheet" type="text/css">
-      <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet" type="text/css">
-      <script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
-      <!--[if lt IE 10]><script type="text/javascript" src="../js/jquery.placeholder.js"></script><![endif]-->
-      <script type="text/javascript" src="../js/TweenMax.min.js"></script>
-      <script type="text/javascript" src="../js/easing/EasePack.min.js"></script>
-      <script type="text/javascript" src="../js/swfobject.js"></script>
-      <script type="text/javascript" src="../js/index.js"></script>
-      <script type="text/javascript" src="../js/blockad.js"></script>
-	  <style type="text/css">
-		.image {
-			margin:0;
-			padding:0;
-			width:600px;
-			height:400px;
-			left: 50%;
-			top: 50%;
-			position:absolute;
-			margin-left:-300px;
-			margin-top:-200px;
-			min-width:0px;
-			min-height:0px;
-		}
-		</style>
-      <script type="text/javascript">
-         var flashversion = "9.0.0";
-         var domain = "https://www.incredibox.com/";
-         var versionIE = 0;
-         
-         $(document).ready(function() {
-         	if(swfobject.hasFlashPlayerVersion(flashversion)){
-         		var flashvars = {};
-         		var params = {};
-         		params.bgcolor = "#FFFFFF";
-         		params.menu = "false";
-         		params.quality = "best";
-         		params.salign = "T";
-         		params.scale = "noscale";
-         		params.wmode = "opaque";
-         		params.allowfullscreen = "false";
-         		params.allowscriptaccess = "always";
-         		var attributes = {};
-         		swfobject.embedSWF("https://raw.githubusercontent.com/Joalor64GH/Incredibox-Flash/main/v0/index.swf", "flashcontent", "100%", "100%", flashversion, "", flashvars, params, attributes, embedFlashOk)
-         	}else{
-         		$(".info").show();
-         	}
-         	init();
-         });
-         function embedFlashOk(e){
-         	// trace(e.success);
-         }
-      </script>
-   </head>
-   <body>
-      <noscript>
-         <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
-         <div id="info-js"> <p>You have to enable JavaScript in your browser settings to access this website</p></div>
-      </noscript>
-      <div id="bbox">
-         <div id="bbox-fd"></div>
-         <div id="bbox-body">
-            <div id="bbox-click"></div>
-         </div>
-      </div>
-      <!-- ____________________________________________________ -->
-      <!-- _____________________________________________ HEADER -->			
-      <div id="menu">
-         <!-- _____________________________ MENU -->
-         <div id="hd-left">
-            <a href="../index.html" id="bt1" class="lien"> <div class="title">Incredibox</div> <div class="picto"></div></a>
-            <div class="clear"></div>
-         </div>
-      </div>
-      <!-- _____________________________________________________ -->
-      <!-- _____________________________________________ CONTENT -->
-      <div id="wrap" class="game v0">
-        <!-- _____________________________________________ FLASH APP V3 -->
-        <div id="flashcontent">
-			<a href="http://get.adobe.com/en/flashplayer/" target="_blank"><img class="image" src="need_flash9.png" width="600" height="400" alt="download flash player" border="no"></a>
-		</div>
-      </div>
-   </body>
+        <meta property="og:title" content='INCREDIBOX V1 - "The original"' />
+        <meta property="og:description" content="The first version of Incredibox created in 2009. Pump it up and chill!" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.incredibox.com/img/share/fb-incredibox-v0.jpg" />
+        <link href="favicon.ico" type="image/ico" rel="icon" />
+        <link href="../css/index.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Allan" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+        <!--[if lt IE 10]><script type="text/javascript" src="../js/jquery.placeholder.js"></script><![endif]-->
+        <script type="text/javascript" src="../js/TweenMax.min.js"></script>
+        <script type="text/javascript" src="../js/easing/EasePack.min.js"></script>
+        <script type="text/javascript" src="../js/swfobject.js"></script>
+        <script type="text/javascript" src="../js/index.js"></script>
+        <script type="text/javascript" src="../js/blockad.js"></script>
+        <style type="text/css">
+            .image {
+                margin: 0;
+                padding: 0;
+                width: 600px;
+                height: 400px;
+                left: 50%;
+                top: 40%;
+                position: absolute;
+                margin-left: -300px;
+                margin-top: -200px;
+                min-width: 0px;
+                min-height: 0px;
+            }
+        </style>
+        <script type="text/javascript">
+            var flashversion = "9.0.0";
+            var domain = "https://www.incredibox.com/";
+            var versionIE = 0;
+
+            $(document).ready(function () {
+                if (swfobject.hasFlashPlayerVersion(flashversion)) {
+                    var flashvars = {};
+                    var params = {};
+                    params.bgcolor = "#FFFFFF";
+                    params.menu = "false";
+                    params.quality = "best";
+                    params.salign = "T";
+                    params.scale = "noscale";
+                    params.wmode = "opaque";
+                    params.allowfullscreen = "false";
+                    params.allowscriptaccess = "always";
+                    var attributes = {};
+                    swfobject.embedSWF("https://raw.githubusercontent.com/Joalor64GH/Incredibox-Flash/main/v0/index.swf", "flashcontent", "100%", "100%", flashversion, "", flashvars, params, attributes, embedFlashOk);
+                } else {
+                    $(".info").show();
+                }
+                init();
+            });
+            function embedFlashOk(e) {
+                // trace(e.success);
+            }
+        </script>
+    </head>
+    <body>
+        <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+        <noscript>
+            <div id="info-js"><p>You have to enable JavaScript in your browser settings to access this website</p></div>
+        </noscript>
+        <div id="bbox">
+            <div id="bbox-fd"></div>
+            <div id="bbox-body">
+                <div id="bbox-click"></div>
+            </div>
+        </div>
+        <!-- ____________________________________________________ -->
+        <!-- _____________________________________________ HEADER -->
+        <div id="menu">
+            <!-- _____________________________ MENU -->
+            <div id="hd-left">
+                <a href="../index.html" id="bt1" class="lien">
+                    <div class="title">Incredibox</div>
+                    <div class="picto"></div>
+                </a>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <!-- _____________________________________________________ -->
+        <!-- _____________________________________________ CONTENT -->
+        <div id="wrap" class="game v0">
+            <!-- _____________________________________________ FLASH APP V3 -->
+            <div id="flashcontent">
+                <a href="http://get.adobe.com/en/flashplayer/" target="_blank"><img class="image" src="need_flash9.png" width="600" height="400" alt="download flash player" border="no" /></a>
+            </div>
+        </div>
+    </body>
 </html>
