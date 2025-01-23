@@ -18,6 +18,15 @@
         <script type="text/javascript" src="js/TweenMax.min.js"></script>
         <script type="text/javascript" src="js/easing/EasePack.min.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            var flashversion = "9.0.0";
+            var domain = "http://www.incredibox.com/";
+            var versionIE = 0;
+
+            $(document).ready(function () {
+                init();
+            });
+        </script>
     </head>
     <body>
         <div id="bbox">
@@ -63,6 +72,8 @@
                     <div id="head-title">
                         <h1>Incredibox</h1>
                         <p>Express your musicality!</p>
+                        <a href="https://itunes.apple.com/app/id1093131935" target="_blank" class="bt-store" id="bt-appstore" onclick="saveGA('click_bt_appstore', 'Click from header', 'click_bt_store');"></a>
+                        <a href="https://play.google.com/store/apps/details?id=com.sofarsogood.incredibox" target="_blank" class="bt-store" id="bt-playstore" onclick="saveGA('click_bt_playstore', 'Click from header', 'click_bt_store');"></a>
                     </div>
                 </div>
             </div>
