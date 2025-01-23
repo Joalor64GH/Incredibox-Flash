@@ -3,7 +3,7 @@ A fan recreation of Incredibox when it first appeared on Flash!
 
 It's basically an archive of the flash versions of Little Miss, Sunrise, The Love, and The Original. <br>
 I also copied a few other elements from the old website just for fun. <br>
-If something goes wrong, you can either [contact me](rhgarcon@gmail.com) or [report an issue](https://github.com/Joalor64GH/Incredibox-Flash/issues). <br>
+If something goes wrong, you can either [contact me](mailto:rhgarcon@gmail.com) or [report an issue](https://github.com/Joalor64GH/Incredibox-Flash/issues). <br>
 Enjoy!
 
 ## Known Issues
