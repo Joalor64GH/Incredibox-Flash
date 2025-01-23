@@ -93,41 +93,8 @@
         <!--[if lt IE 10]><script type="text/javascript" src="../js/jquery.placeholder.js"></script><![endif]-->
         <script type="text/javascript" src="../js/TweenMax.min.js"></script>
         <script type="text/javascript" src="../js/easing/EasePack.min.js"></script>
-        <script type="text/javascript" src="../js/swfobject.js"></script>
         <script type="text/javascript" src="../js/index.js"></script>
         <script type="text/javascript" src="../js/blockad.js"></script>
-        <script type="text/javascript">
-            var flashversion = "9.0.0";
-            var domain = location.protocol.indexOf("http") > -1 ? "http://www.incredibox.com/" : "http://www.incredibox.com/";
-            var versionIE = 0;
-
-            $(document).ready(function () {
-                if (swfobject.hasFlashPlayerVersion(flashversion)) {
-                    var flashvars = {};
-                    flashvars.compo = "";
-                    flashvars.domain = domain;
-                    flashvars.rootFolder = "../app/";
-                    flashvars.appFolder = "v3/";
-                    var params = {};
-                    params.bgcolor = "#FFFFFF";
-                    params.menu = "false";
-                    params.quality = "best";
-                    params.salign = "T";
-                    params.scale = "noscale";
-                    params.wmode = "opaque";
-                    params.allowfullscreen = "false";
-                    params.allowscriptaccess = "always";
-                    var attributes = {};
-                    swfobject.embedSWF("../app/index.swf", "flashContent", "100%", "100%", flashversion, "", flashvars, params, attributes, embedFlashOk);
-                } else {
-                    $(".info").show();
-                }
-                init();
-            });
-            function embedFlashOk(e) {
-                // trace(e.success);
-            }
-        </script>
     </head>
     <body>
         <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
@@ -202,5 +169,38 @@
             <!-- _____________________________________________ BT-STORE -->
         </div>
         <!-- div wrap -->
+        <script type="text/javascript" src="../js/swfobject.js"></script>
+        <script type="text/javascript">
+            var flashversion = "9.0.0";
+            var domain = location.protocol.indexOf("http") > -1 ? "http://www.incredibox.com/" : "http://www.incredibox.com/";
+            var versionIE = 0;
+
+            $(document).ready(function () {
+                if (swfobject.hasFlashPlayerVersion(flashversion)) {
+                    var flashvars = {};
+                    flashvars.compo = "";
+                    flashvars.domain = domain;
+                    flashvars.rootFolder = "../app/";
+                    flashvars.appFolder = "v3/";
+                    var params = {};
+                    params.bgcolor = "#FFFFFF";
+                    params.menu = "false";
+                    params.quality = "best";
+                    params.salign = "T";
+                    params.scale = "noscale";
+                    params.wmode = "opaque";
+                    params.allowfullscreen = "false";
+                    params.allowscriptaccess = "always";
+                    var attributes = {};
+                    swfobject.embedSWF("../app/index.swf", "flashContent", "100%", "100%", flashversion, "", flashvars, params, attributes, embedFlashOk);
+                } else {
+                    $(".info").show();
+                }
+                init();
+            });
+            function embedFlashOk(e) {
+                // trace(e.success);
+            }
+        </script>
     </body>
 </html>
